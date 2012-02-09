@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Yapp Size</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/yapp-canvas114x114.png">
+
+  <style type="text/css">
+    body { margin: 0; padding: 0; position: relative; font-family: arial, sans-serif;}
+    #header {
+      position: absolute; top: 0; height: 50px; right: 0; left: 0;
+    }
+    #footer {
+      position: absolute; bottom: 0; height: 50px; right: 0; left: 0;
+    }
+    #scroll {
+      position: absolute; top: 50px; bottom: 50px; right: 0; left: 0;
+      background: #fcfff4;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#e9e9ce));
+      background: -webkit-linear-gradient(top, #fcfff4 0%,#e9e9ce 100%);
+    }
+    #content {
+      min-height: 100%;
+    }
+    .bar {
+      color: #fff;
+      text-shadow: -1px -1px 0px #000;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      background: #7d7e7d;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e));
+      background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+    }
+    form {
+      margin: 1em;
+    }
+    label {float: left; margin-right: 1em;}
+    input {
+      display:block;
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id="header" class="bar">Mobile Viewport</div>
+  <div id="scroll">
+    <div id="content">
+      <form>
+        <label for=name>Name</label>
+        <input id="name" name="name" type="text" placeholder="First Last" autofocus>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="example@domain.com">
+        <label for=phone>Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="123-456-7890">
+      </form>
+      <div id="log"></div>
+    </div>
+  </div>
+  <div id="footer" class="bar"></div>
+  <script src="/vendor/iscroll.min.js"></script>
+  <script src="/lib/viewport.js"></script>
+  <script src="/demo.js"></script>
+</body>
+</html>

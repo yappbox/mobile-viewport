@@ -1,0 +1,15 @@
+[submodule "node_modules/uglify-js"]
+	path = node_modules/uglify-js
+	url = git@github.com:mishoo/UglifyJS.git
+[submodule "node_modules/jslint"]
+	path = node_modules/jslint
+	url = https://github.com/reid/node-jslint.git
+[submodule "node_modules/node-static"]
+	path = node_modules/node-static
+	url = git://github.com/cloudhead/node-static.git
+[submodule "node_modules/nopt"]
+	path = node_modules/nopt
+	url = https://github.com/isaacs/nopt.git
+[submodule "node_modules/abbrev"]
+	path = node_modules/abbrev
+	url = https://github.com/isaacs/abbrev-js.git
